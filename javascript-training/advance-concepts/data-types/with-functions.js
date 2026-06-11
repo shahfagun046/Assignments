@@ -11,8 +11,7 @@ console.log("**********VERIFY THE ACCOUNT BALANCE**********");
 loginToApplication("Firefox", "http://www.icici.com/");
 console.log("Verify the home page is displayed");
 console.log("Navigate to the account balance page");
-console.log("Verify the account balance is displayed as " + getAccountBalance());
-
+console.log("Verify the account balance is displayed as " + getAccountBalance("Savings"));
 logoutAndCloseBrowser();
 
 // Test Case 3: verify the account statement
@@ -59,8 +58,8 @@ console.log("Close the browser");
 
 }
 
-function getAccountBalance(){
-    console.log("Navigate to the account balance page")
+function getAccountBalance(accountType){
+    console.log("Navigate to the ${accountType} account balance page")
     let accountBalance = 100000;
     return accountBalance;
 

@@ -107,3 +107,86 @@ console.log(fruits[1]);
 console.log(fruitsAndPrices[2]);
 
 //-function => Function data type represents a block of code or collection of statements written together to complete a specific task.
+
+function loginToApplicationWithEdge() {
+
+console.log("Launch the Edge Browser");
+console.log("Enter the URL: http://www.icici.com/");
+console.log("Enter the username as 'fagun' and password as 'fagun@123'");
+console.log("Click on the login button");
+}
+
+
+function logoutAndCloseBrowser() {
+
+console.log("Logout from the application");
+console.log("Close the browser");
+
+}
+
+function getAccountBalance(accountType){
+    console.log("Navigate to the ${accountType} account balance page")
+    let accountBalance = 100000;
+    return accountBalance;
+
+}
+
+// Set => Set Datatype represents a collection of unique values of any data type.
+let empIds = new Set();
+empIds.add(1234);
+empIds.add(5678);
+empIds.add(1234);
+empIds.add("1234");
+empIds.add(567);
+console.log(empIds.size);
+console.log(empIds);
+
+// Map => A map represents a collection of key-value pairs together at one place.
+// -key can be of any data type, key should be unique, value can be of any data type, value can be duplicate.
+
+let employeeDetails = new Map();
+employeeDetails.set(1234, "Bharath");
+employeeDetails.set(1235, "Sarath");
+employeeDetails.set(1234, "Bharath Kumar");
+employeeDetails.set(1236, "Sarath");
+console.log(employeeDetails.size);
+console.log(employeeDetails);
+
+//Date => Date datatype represents the date and time together at one place.
+
+let currentDate = new Date();
+console.log(currentDate);
+
+//Get current year.
+let currentYear = currentDate.getFullYear();
+console.log(currentYear);
+
+//Get current month.
+let currentMonth = currentDate.getMonth() //0 to 11 (0-January, 1-February, 2-March, 3-April, 4-May, 5-June, 6-July, 7-August, 8-September, 9-October, 10-November, 11-December)
+console.log(currentMonth+1); 
+
+//Get current date.
+let currentDay = currentDate.getDate();
+console.log(currentDay);
+
+//Get current hours.
+let currentHours = currentDate.getHours();
+console.log(currentHours);
+
+//Get current minutes.
+let currentMinutes = currentDate.getMinutes();
+console.log(currentMinutes);
+
+//Get current seconds.
+let currentSeconds = currentDate.getSeconds();
+console.log(currentSeconds);
+
+//Get current day
+let currentDayOfWeek = currentDate.getDay(); //0 to 6 (0 - Sunday, 1 - Monday, 2 - Tuesday, 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday)
+console.log(currentDayOfWeek);
+
+
+
+
+
+
